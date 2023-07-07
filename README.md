@@ -25,7 +25,7 @@ Notes:
 
 1) At present , unit test coverage for bloc and repo layers are 100%, whilst widget testing needs further work
 2) Retry mechanism for API needs to be added to move out of error state to success
-3) Logic for search can also be improved by using [https://pub.dev/packages/[fuzzywuzzy](FuzzyWuzzy) package
+3) Logic for search can also be improved by using FuzzyWuzzy package
 
 
 
