@@ -7,7 +7,6 @@ removeExtra () {
 'lib/main.dart' \
 'lib/core/api/*' \
 'lib/core/common/*' \
-'lib/core/coordinator/*' \
 'lib/core/di/*' \
 'lib/core/model/*' \
 'lib/core/router/*' \
