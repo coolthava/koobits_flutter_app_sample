@@ -163,5 +163,25 @@ void main() {
         verify: (cubit) {
           expect(postCubit.postData, []);
         });
+
+    blocTest<PostCubit, PostState>(
+        'searchDataForText , if prevText == current, search will not be done again ',
+        build: () {
+          return postCubit;
+        },
+        act: (cubit) async {
+          await cubit.getPostData();
+          cubit.searchDataForText('test');
+          cubit.searchDataForText('test');
+          cubit.searchDataForText('test');
+        },
+        expect: () => <PostState>[
+              LoadingPostState(),
+              SuccessPostState([postData1, postData2]),
+              SuccessPostState([postData1]),
+            ],
+        verify: (cubit) {
+          expect(postCubit.postData, [postData1, postData2]);
+        });
   });
 }
