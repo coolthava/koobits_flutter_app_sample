@@ -4,7 +4,7 @@ import 'package:koobits_flutter_app/presentation/screen/home/home_page.dart';
 part 'router.gr.dart';
 
 @AutoRouterConfig()
-class MyRouter extends _$MyRouter {
+class MyRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
         AutoRoute(

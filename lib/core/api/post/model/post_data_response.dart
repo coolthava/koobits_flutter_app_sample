@@ -12,9 +12,11 @@ class PostDataResponse {
 
   PostDataResponse(this.userId, this.id, this.title, this.body);
 
-  static PostDataResponse fromJson(Map<String, dynamic> json) => _$PostDataResponseFromJson(json);
+  static PostDataResponse fromJson(Map<String, dynamic> json) =>
+      _$PostDataResponseFromJson(json);
 
   Map<String, dynamic> toJson() => _$PostDataResponseToJson(this);
 
-  PostData toModel() => PostData(userId, id, title, body);
+  PostData toModel() =>
+      PostData(userId: userId, id: id, title: title, body: body);
 }

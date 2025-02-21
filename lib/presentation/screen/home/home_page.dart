@@ -11,7 +11,7 @@ import 'package:koobits_flutter_app/presentation/screen/home/widget/post_data_it
 
 @RoutePage()
 class MyHomePage extends StatefulWidget implements AutoRouteWrapper {
-  const MyHomePage({Key? key}) : super(key: key);
+  const MyHomePage({super.key});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   /// re-usability if needed
                   return ListView.separated(
                     keyboardDismissBehavior:
-                    ScrollViewKeyboardDismissBehavior.onDrag,
+                        ScrollViewKeyboardDismissBehavior.onDrag,
                     itemBuilder: (context, index) {
                       return Padding(
                         padding: EdgeInsets.only(

@@ -12,7 +12,7 @@ class PostRepository implements IPostRepository {
   Future<Either<Exception, List<PostData>>> getPostData() async {
     /// improvements are to
     /// 1) create network utils to check internet connectivity before making API call
-    /// 2) addbre retry mechanism
+    /// 2) add retry mechanism
 
     try {
       final postResponse = await postProvider.getPostData();
